@@ -16,6 +16,7 @@ namespace Engine {
 
 		inline unsigned int GetWidth() const override { return m_Data.Width; }
 		inline unsigned int GetHeight() const override { return m_Data.Height; }
+		//inline std::string SetName(std::string name) const override { return m_Data.Title = "cardgame";}
 
 		// Window attributes
 		inline void SetEventCallback(const EventCallbackFn& callback) override { m_Data.EventCallback = callback; }
