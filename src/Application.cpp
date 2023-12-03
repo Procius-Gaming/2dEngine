@@ -35,6 +35,7 @@ namespace Engine {
 			m_Window->OnUpdate();
 			OnRender();
 			OnInput();
+			ImGui();
 			ImGui::Render();
     		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 			//EN_CORE_INFO("Here");

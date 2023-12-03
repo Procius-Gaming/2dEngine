@@ -19,10 +19,12 @@ namespace Engine {
 		virtual ~Application();
 
 		void Run();
-		virtual void Setup() {};
+		virtual void Setup() = 0;
 		void OnEvent(Event& e);
-		virtual void OnRender() {};
+		virtual void OnRender() = 0;
 		virtual void OnInput() {};
+		virtual void ImGui() {};
+
 		
 		inline static Application& Get() { return *s_Instance;}
 		inline Window& GetWindow() { return *m_Window;}
